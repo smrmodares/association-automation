@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "koodak";
+  src: url("/home/reza/proj/font/koodak.TTF");
+}
 html,
 body,
 header,
 #intro {
     height: 100%;
-}
+    font-family: "koodak";
+  }
 
 #intro {
     /* background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed; */

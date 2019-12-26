@@ -1,0 +1,81 @@
+.hidden{
+    backface-visibility: hidden;
+    font-size: 20px;
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    color: blue;
+    padding: 20px;
+    line-height: 200%;
+    transform: rotate3d(1, 0, 0, -50deg);
+}
+a:hover .hidden {
+    opacity: 0.5;
+    visibility: visible;
+    position: relative;
+    background:linear-gradient(greenyellow,lightgreen);
+
+}
+.pic{
+    position: relative;
+    overflow: hidden;
+}
+a:hover .pic{
+    position: absolute;
+    opacity: 0;
+    transform-origin: 30% 0 0;
+     transition: opacity 0.85s linear 0s;
+}
+
+.pa{
+    display: block;
+
+    color: red;
+    height: 40px;
+    width: 400px;
+    background-color: blue;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-color: gray;
+    color: #2b2c1a;
+}
+th,td{
+    padding: 20px;
+
+}
+table th{
+
+}
+table{
+    background:gainsboro;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.tablehead{
+    background-color: burlywood;
+
+}
+
+h3{
+    color: red;
+}
+
+.mydiv{
+    display: block;
+    background-color: #0b51c5;
+    width: 1100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px 3px gray;
+    border: 2px solid gray;
+}
+#h1{
+    margin-bottom: 10px;
+    margin-right: 400px;
+}

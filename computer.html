@@ -41,50 +41,66 @@
 <body>
 
   <!--Main Navigation-->
-  <!--Navbar -->
   <header>
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark indigo lighten-1">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" style="background-color: #24355C;">
+
       <div class="container">
-        <a class="navbar-brand" href="#">سماد</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
-          aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">سماد</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">شرکت در انتخابات
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">درخواست کاندید شدن</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">درخواست TA شدن</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ثبت نام در رویدادها </a>
-            </li>
 
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto smooth-scroll grey-text">
+            <li class="nav-item">
+              <a class="nav-link grey-text" href="#request">میزکار</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link grey-text" href="#confirm">انتخابات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link grey-text" href="#confirm">کاندید شو</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link grey-text" href="#new">دستیار شو</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link grey-text" href="#request">رویداد ها</a>
+            </li>
           </ul>
+          <!-- Links -->
+
+
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item avatar">
               <a class="nav-link p-0" href="#">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                <img src="img/ali.jpg" class="rounded-circle z-depth-0"
                   alt="avatar image" height="35">
               </a>
             </li>
           </ul>
-        </div>
+        <!-- Collapsible content -->
+
       </div>
+
     </nav>
+    <!--/.Navbar-->
+
   </header>
-  <!--/.Navbar -->
   <!--Main Navigation-->
 
   <!--Main layout-->
-  <main class="mt-5">
+  <main class="my-5">
   <!--Main container-->
   <div class="container">
 
@@ -96,7 +112,7 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-5 mb-4">
+        <div class="col-md-5 mb-4 my-5">
 
           <h2>انتخابات</h2>
             <hr>
@@ -313,70 +329,130 @@
   <!--Main layout-->
 
   <!-- Footer -->
-  <footer class="page-footer font-small indigo pt-4 mt-4">
+  <footer class="page-footer font-small unique-color-dark mt-5">
 
-    <!-- Footer Links -->
-    <form class="container text-center text-md-left">
+    <!-- Social buttons -->
+    <div class="primary-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
 
-      <!-- Grid row -->
-      <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">ما‌را در شبکه های اجتماعی دنبال کنید!</h6>
+                </div>
+                <!--Grid column-->
 
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <!--Facebook-->
+                    <a class="fb-ic ml-0">
+                        <i class="fab fa-facebook white-text mr-4"> </i>
+                    </a>
+                    <!--Twitter-->
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!--Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa-telegram white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin-->
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                    </a>
+                </div>
+                <!--Grid column-->
 
-          <!-- Content -->
-          <h5 class="text-uppercase">انجمن ها</h5>
-          <ul>
-            <li>
-              <a href="#">انجمن علمی کامپیوتر</a>
-            </li>
-             <li>
-              <a href="#">کانون طراحان جوان</a>
-            </li>
-             <li>
-               <a href="#">انجمن ورزشی</a>
-            </li>
-             <li>
-              <a href="#">خیریه ماه آبی</a>
-            </li>
-          </ul>
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="row mt-3">
+
+            <!--First column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>سماد</strong>
+                </h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>سماد از پاییز ۹۸ با یک تیم دانشجویی شروع به کار کرد.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--second column-->
+            <div class="col-md-4 col-lg-3 col-xl-3">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>انجمن ها</strong>
+              </h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                انجمن علمی کامپیوتر
+              </p>
+              <p>
+                  انجمن علمی برق</p>
+              <p>
+                  انجمن علمی مکانیک </p>
+              <p>
+                خیریه ماه آبی</p>
+              <p>
+                انجمن ورزشی </p>
+              
+          </div>
+          <!--/.second column-->
+            
+            <!--second column-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>پیوندها</strong>
+                </h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="https://www.msrt.ir/fa">وزارت علوم </a>
+                </p>
+                <p>
+                  <a href="https://qut.ac.ir">دانشگاه صنعتی قم</a>
+                </p>
+                <p>
+                    <a href="https://github.com/smrmodares/association-automation">گیت هاب سماد</a>
+                </p>
+                <p>
+                    <a href="help.html">راهنمای سایت</a>
+                </p>
+            </div>
+            <!--/.Third column-->
+
+
+            <!--Fourth column-->
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>ارتباط با ما</strong>
+                </h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i></i>قم - بلوار شهید خداکرم - دانشگاه صنعتی قم  </p>
+                <p>
+                    <i class="fa fa-envelope mr-3"></i> smrmodares@gmail.com</p>
+                <p>
+                    <i class="fa fa-mobile mr-3"></i> 09363516413</p>
+            </div>
+            <!--/.Fourth column-->
 
         </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase"></h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!"> صفحه اصلی</a>
-              </li>
-              <li>
-                <a href="#!">ارتباط با ما</a>
-              </li>
-              <li>
-                <a href="#!">راهنمای سایت</a>
-              </li>
-
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-
-
     </div>
-    <!-- Footer Links -->
+    <!--/.Footer Links-->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/">SAMAD Development Group</a>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> SAMAD Development Group</a>
     </div>
     <!-- Copyright -->
 

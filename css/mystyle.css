@@ -1,10 +1,16 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
 .hidden{
     backface-visibility: hidden;
     font-size: 20px;
     visibility: hidden;
     overflow: hidden;
     position: absolute;
-    color: blue;
+    color: #24355C;
     padding: 20px;
     line-height: 200%;
     transform: rotate3d(1, 0, 0, -50deg);
@@ -36,26 +42,6 @@ a:hover .pic{
     background-color: blue;
 }
 
-table, th, td{
-    border: 2px solid black;
-    border-color: gray;
-    color: #2b2c1a;
-}
-th,td{
-    padding: 20px;
-
-}
-
-table{
-    background:gainsboro;
-    text-align: center;
-    margin-bottom: 30px;
-
-}
-.tablehead{
-    background-color: burlywood;
-
-}
 
 h3{
     color: red;
@@ -77,3 +63,32 @@ h3{
     margin-bottom: 10px;
     margin-right: 400px;
 }
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("file:///home/reza/proj/img/election.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  } 

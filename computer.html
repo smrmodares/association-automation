@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>سماد</title>
+
+  <!-- SAMAD icon -->
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/mystyle.css">
+
+    <script>
+        function chkcontrol(j) {
+            var total=0;
+            for(var i=0;i<document.form1.chk.length;i++){
+                if(document.form1.chk[i].checked){
+                    total=total+1;
+                }
+                if(total>2){
+                    alert("تعداد انتخاب های شما بیش از حد مجاز است");
+                    document.form1.chk[j].checked=false;
+                    return false;
+                }
+            }
+        }
+        function control() {
+            confirm("آیا از انتخاب خود مطمئن هستید؟");
+            alert("از مشارکت شما سپاس گزاریم")
+        }
+    </script>
+</head>
+<body>
+
+  <!--Main Navigation-->
+  <!--Navbar -->
+  <header>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark indigo lighten-1">
+      <div class="container">
+        <a class="navbar-brand" href="#">سماد</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+          aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">شرکت در انتخابات
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درخواست کاندید شدن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درخواست TA شدن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ثبت نام در رویدادها </a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item avatar">
+              <a class="nav-link p-0" href="#">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                  alt="avatar image" height="35">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/.Navbar -->
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+  <!--Main container-->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+          <h2>انتخابات</h2>
+            <hr>
+            <div class="mydiv">
+                <h2>برگزار کننده : انجمن علمی کامپیوتر</h2>
+                </br>
+                <ul>
+                    <h3>به نکات زیر توجه فرمایید:</h3>
+                    <li>
+                        حداکثر به دو نفر میتوانید رای بدهید.
+                    </li>
+                    <li>
+                        فشردن کلیک ثبت فراموش نشود.
+                    </li>
+                     <li>
+                        پس از فشردن کلیک ثبت انتخاب خود را باید تایید کنید.
+                    </li>
+                </ul>
+
+                </br></br></br>
+            </div>
+             <h1>لیست نامزدهای انتخابات</h1>
+            <hr>
+
+            <form method="post" name="form1" onsubmit="control()">
+          <table style="width: 1100px">
+              <tr class="tablehead">
+                  <td>نام دانشجو</td>
+                  <td>شماره دانشجویی</td>
+                  <td>انتخاب</td>
+
+              </tr>
+              <tr>
+                  <td>محمدرضا مدرس</td>
+                  <td>96103232</td>
+                  <td><input type="checkbox" name="chk" value="modares" onclick="chkcontrol(0)"></td>
+              </tr>
+              <tr>
+                  <td>علیرضا قربان نژاد</td>
+                  <td>96103219</td>
+                  <td><input type="checkbox" name="chk" value="alireza" onclick="chkcontrol(1)"></td>
+
+              </tr>
+              <tr>
+                  <td>امیرحسین پوریا</td>
+                  <td>96103220</td>
+                  <td><input type="checkbox" name="chk" value="pourya" onclick="chkcontrol(2)"></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><input type="reset" value="انصراف"></td>
+                  <td><input type="submit" value="ثبت" ></td>
+              </tr>
+
+          </table>
+
+            </form>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <!--Grid row-->
+<h1>معرفی نامزدهای انتخابات</h1>
+      <hr>
+    <div class="row">
+      <div class="card-deck">
+
+        <!--Card-->
+        <div class="card">
+
+          <!--Card image-->
+<a href="#">
+    <div class="mask rgba-white-slight"></div>
+
+          <div class="view overlay">
+
+              <div class="pic">
+            <img
+              src="img/modares.jpg"
+              class="card-img-top text-center"
+              alt="سید محمد رضا مدرس"
+            />
+              </div>
+              <div class="hidden">
+              <p class=inner">ورودی 96</p>
+            <p class=inner">علاقه مند به لینوکس، پایتون و طراحی سایت</p>
+
+              <ul class=inner">
+                برنامه ها
+                <li>
+                  برکزاری کلاس های پیشرفته برنامه نویسی
+                </li>
+                <li>
+                  برگزاری سمینارهای بزرگ
+                </li>
+                <li>
+                  برگزاری مسابقه acm در سطح استان
+                </li>
+              </ul>
+
+              </div>
+
+
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <a href="#" class="btn btn-indigo btn-block">محمد رضا مدرس</a>
+          </div>
+
+        </div>
+        <!--/.Card-->
+       <div class="card">
+
+          <!--Card image-->
+<a href="#">
+    <div class="mask rgba-white-slight"></div>
+
+          <div class="view overlay">
+
+              <div class="pic">
+            <img
+              src="img/alireza.jpg"
+              class="card-img-top text-center"
+              alt="علیرضا قربان نژاد"
+            />
+              </div>
+              <div class="hidden">
+              <p class=inner">ورودی 96</p>
+            <p class=inner">علاقه مند به هوش مصنوعی و جاوا</p>
+
+              <ul class=inner">
+                برنامه ها
+                <li>
+                  برگزاری کلاس های پیشرفته برنامه نویسی
+                </li>
+                <li>
+                  برگزاری اردوهای علمی
+                </li>
+                <li>
+                  برگزاری جشن ورودی ها
+                </li>
+              </ul>
+
+              </div>
+
+
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <a href="#" class="btn btn-indigo btn-block">علیرضا قربان نژاد</a>
+          </div>
+
+        </div>
+
+               <div class="card">
+
+          <!--Card image-->
+<a href="#">
+    <div class="mask rgba-white-slight"></div>
+
+          <div class="view overlay">
+
+              <div class="pic">
+            <img
+              src="img/pourya.jpg"
+              class="card-img-top text-center"
+              alt="امیرحسین پوریا"
+            />
+              </div>
+              <div class="hidden">
+              <p class=inner">ورودی 96</p>
+            <p class=inner">علاقه مند به اندروید</p>
+
+              <ul class=inner">
+                برنامه ها
+                <li>
+                  برگزاری کلاس های با کیفیت در زمینه طراحی وب و اندروید
+                </li>
+                <li>
+                 پیگیری مطالبات آموزشی و پژوهشی دانشجویان
+                </li>
+                <li>
+                  راه اندازی سایت انجمن
+                </li>
+              </ul>
+
+              </div>
+
+
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <a href="#" class="btn btn-indigo btn-block">امیرحسین پوریا</a>
+          </div>
+
+        </div>
+
+
+
+
+  </div>
+  <!--Main container-->
+  </main>
+  <!--Main layout-->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small indigo pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <form class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">انجمن ها</h5>
+          <ul>
+            <li>
+              <a href="#">انجمن علمی کامپیوتر</a>
+            </li>
+             <li>
+              <a href="#">کانون طراحان جوان</a>
+            </li>
+             <li>
+               <a href="#">انجمن ورزشی</a>
+            </li>
+             <li>
+              <a href="#">خیریه ماه آبی</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase"></h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!"> صفحه اصلی</a>
+              </li>
+              <li>
+                <a href="#!">ارتباط با ما</a>
+              </li>
+              <li>
+                <a href="#!">راهنمای سایت</a>
+              </li>
+
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/">SAMAD Development Group</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>

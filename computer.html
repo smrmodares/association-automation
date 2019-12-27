@@ -15,24 +15,10 @@
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/computer_style.css">
   <link rel="stylesheet" href="css/style.css">
 
-    <script>
-        function chkcontrol(j) {
-            var total=0;
-            for(var i=0;i<document.form1.chk.length;i++){
-                if(document.form1.chk[i].checked){
-                    total=total+1;
-                }
-                if(total>2){
-                    alert("تعداد انتخاب های شما بیش از حد مجاز است");
-                    document.form1.chk[j].checked=false;
-                    return false;
-                }
-            }
-        }
-    </script>
+    
 </head>
 <body>
 
@@ -115,7 +101,7 @@
                             حداکثر به دو نفر میتوانید رای بدهید.
                         </li>
                         <li>
-                            فشردن کلیک ثبت فراموش نشود!
+                            فشردن ثبت فراموش نشود!
                         </li>
         
                     </ul>
@@ -140,48 +126,7 @@
 
   <!--Main layout-->
   <main class="my-5">
-      <!-- Central Modal Danger Demo-->
-<div class="modal fade right" id="ModalDanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-aria-hidden="t`rue">
-<div class="modal-dialog modal-notify modal-danger modal-side modal-top-right" role="document">
-  <!--Content-->
-  <div class="modal-content">
-    <!--Header-->
-    <div class="modal-header">
-      <p class="heading">Modal Danger</p>
 
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true" class="white-text">&times;</span>
-      </button>
-    </div>
-
-    <!--Body-->
-    <div class="modal-body">
-
-      <div class="row">
-        <div class="col-3">
-          <p></p>
-          <p class="text-center"><i class="fas fa-shopping-cart fa-4x"></i></p>
-        </div>
-
-        <div class="col-9">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestiae provident temporibus
-            sunt earum.</p>
-          <h2><span class="badge">v52gs1</span></h2>
-        </div>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <div class="modal-footer justify-content-center">
-      <a type="button" class="btn btn-danger">Get it now <i class="far fa-gem ml-1 white-text"></i></a>
-      <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
-    </div>
-  </div>
-  <!--/.Content-->
-</div>
-</div>
-<!-- Central Modal Danger Demo-->
   <!--Main container-->
   <div class="container">
 
@@ -353,7 +298,13 @@ aria-hidden="t`rue">
             <!--Grid column-->
             <div class="col-md-12 mb-4 ">
 
-            
+              <!-- alert initialy hided -->
+              <div id="choice-alert" class="alert alert-warning alert-dismissible fade hide" role="alert">
+                <strong>توجه! </strong> حداکثر تعداد انتخاب های شما دو کاندید می باشد
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
 
                 <form method="post" name="form1" >
             <table style="width: 1100px" class="table table-striped table-responsive-md btn-table">
@@ -376,10 +327,18 @@ aria-hidden="t`rue">
                             ۹۶۱۰۳۲۳۲
                         </td>
                         <td class="d-flex justify-content-center">
-                            <div class="custom-control custom-checkbox">
-                                <input name="chk" value="modares" onclick="chkcontrol(0)" type="checkbox" class="custom-control-input" id="defaultChecked0">
-                                <label class="custom-control-label" for="defaultChecked0"></label>
+                            <div class="custom-control custom-switch">
+                              <label class="switch">
+                                <input type="checkbox" name="chk" value="modares" onclick="chkcontrol(0)" class="custom-control-input" id="defaultChecked0">
+                                <span class="slider round"></span>
+                              </label>
                             </div>
+                         
+
+                          
+                          
+
+                            
                         </td>
                     </tr>
                     <tr>
@@ -391,9 +350,12 @@ aria-hidden="t`rue">
                             ۹۶۱۰۳۲۱۹
                         </td>
                         <td class="d-flex justify-content-center">
-                            <div class="custom-control custom-checkbox">
-                                <input name="chk" value="alireza" onclick="chkcontrol(1)" type="checkbox" class="custom-control-input" id="defaultChecked1">
-                                <label class="custom-control-label" for="defaultChecked1"></label>
+                            <div class="custom-control custom-checkbox">  
+
+                                <label class="switch">
+                                  <input name="chk" value="alireza" onclick="chkcontrol(1)" type="checkbox" class="custom-control-input" id="defaultChecked1">
+                                  <span class="slider round"></span>
+                                </label>
                             </div>
                         </td>
                     </tr>
@@ -406,9 +368,11 @@ aria-hidden="t`rue">
                             ۹۶۱۰۳۲۲۰
                         </td>
                         <td class="d-flex justify-content-center">
-                            <div class="custom-control custom-checkbox">
-                                <input name="chk" value="pooria" onclick="chkcontrol(2)" type="checkbox" class="custom-control-input" id="defaultChecked2">
-                                <label class="custom-control-label" for="defaultChecked2"></label>
+                            <div class="custom-control custom-checkbox">  
+                                <label class="switch">
+                                  <input name="chk" value="pooria" onclick="chkcontrol(2)" type="checkbox" class="custom-control-input" id="defaultChecked2">
+                                  <span class="slider round"></span>
+                                </label>
                             </div>
                         </td>
                     </tr>
@@ -605,6 +569,31 @@ aria-hidden="t`rue">
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
+
+  <script>
+    // $(".alert").alert('close');
+    function chkcontrol(j) {
+        var total=0;
+        for(var i=0;i<document.form1.chk.length;i++){
+            if(document.form1.chk[i].checked){
+                total=total+1;
+            }
+            if(total>2){
+              // show the alert
+              var element, name, arr;
+              element = document.getElementById("choice-alert");
+              name = "show";
+              arr = element.className.split(" ");
+              if (arr.indexOf(name) == -1) {
+                element.className += " " + name;
+              }
+
+              document.form1.chk[j].checked=false;
+              return false;
+            }
+        }
+    }
+</script>
 
 </body>
 </html>

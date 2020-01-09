@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/toggle_style.css">
+
 
 </head>
 <body>
@@ -44,14 +44,16 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto smooth-scroll grey-text">
             <li class="nav-item">
-                <a class="nav-link grey-text" href="teacher.html">میزکار</a>
+              <a class="nav-link grey-text" href="student.html">میزکار</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link grey-text" href="confirm_ta.html">تایید دستیار</a>
+                <a class="nav-link grey-text" href="#confirm">کاندید شو</a>
             </li>
-            
             <li class="nav-item">
-                <a class="nav-link grey-text" href="new_ta.html">دستیار جدید</a>
+                <a class="nav-link grey-text" href="election.html">انتخابات</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link grey-text" href="#request">رویداد ها</a>
             </li>
           </ul>
           <!-- Links -->
@@ -60,7 +62,7 @@
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item avatar">
               <a class="nav-link p-0" href="#">
-                <img src="img/agai.jpg" class="rounded-circle z-depth-0"
+                <img src="img/ali.jpg" class="rounded-circle z-depth-0"
                   alt="avatar image" height="35">
               </a>
             </li>
@@ -74,7 +76,6 @@
 
   </header>
   <!--Main Navigation-->
-  
   <!--Main layout-->
   <main class="my-5">
   <!--Main container-->
@@ -111,16 +112,23 @@
 
             <!--Grid column-->
             <div class="col-md-12 mb-4 ">
-
+                <!-- alert initialy hided -->
+              <div id="choice-alert" class="alert alert-success alert-dismissible fade hide" role="alert">
+                درخواست شما ثبت شد.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
                 <form method="post" name="form1" >
             <table style="width: 1100px" class="table table-striped table-responsive-md btn-table">
                 <thead>
                     <tr>
                       <th>#</th>
-                      <th>نام دانشجو</th>
-                      <th> درس درخواستی</th>
-                      <th>اطلاعات دانشجو</th>
-                      <th>تایید</th>
+                      <th>نام درس</th>
+                      <th> استاد</th>
+                      <th>اطلاعات درس</th>
+                      <th>وضعیت درخواست</th>
+                      <th>انتخاب</th>
                     </tr>
                 </thead>
 
@@ -128,50 +136,59 @@
                     <tr>
                         <th scope="row">۱</th>
                         <td>
-                            سیدمحمدرضامدرس
+                            ساختمان داده
                         </td>
                         <td>  
-                             ساختمان داده
+                            مرتضی محجل کفشدوز
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۳۲"
-                                data-content="نمره درس: ۲۰">اطلاعات</a>
+                            <a tabindex="0" class="btn btn-sm btn-outline-info" role="button" data-toggle="popover" data-trigger="focus" title="شنبه و دوشنبه"
+                            data-content="۱۰ الی ۱۲ - کلاس ۲۰۴">اطلاعات</a>
+                        </td>
+                        <td>
+                            <i class="fas fa-check green-text fa-2x"></i>
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
-                                <button type="button" class="btn btn-outline-success waves-effect" data-toggle="modal" data-target="#basicExampleModal">تایید</button>
+                                <button type="button" class="btn btn-outline-danger waves-effect" data-toggle="modal" data-target="#basicExampleModal">انصراف</button>
                             </div>   
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">۲</th>
                         <td>
-                            پرهام بیچرانلو
+                            سیده فائقه فقیه موسوی
                         </td>
                         <td>  
-                             معادلات دیفرانسیل
+                             تحلیل طراحی سیتم ها
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۴۳"
-                                data-content="نمره درس: ۱۹.۵">اطلاعات</a>
+                            <a tabindex="0" class="btn btn-sm btn-outline-info" role="button" data-toggle="popover" data-trigger="focus" title="شنبه"
+                                data-content="۱۴:۳۰ الی ۱۷ - کلاس ۱۰۵">اطلاعات</a>
+                        </td>
+                        <td>
+                            <i class="fas fa-times red-text fa-2x"></i>
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
-                                <button type="button" class="btn btn-outline-success waves-effect" data-toggle="modal" data-target="#basicExampleModal">تایید</button>
+                                <button type="button" disabled class="btn btn-outline-success waves-effect" data-toggle="modal" data-target="#basicExampleModal">تایید</button>
                             </div>   
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">۳</th>
                         <td>
-                            سیدمحمدرضامدرس
+                            مجید آقایی
                         </td>
                         <td>  
-                             مبانی برنامه سازی
+                             معادلات دیفرانسیل
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۳۲"
-                                data-content="نمره درس: ۱۹">اطلاعات</a>
+                            <a tabindex="0" class="btn btn-sm btn-outline-info" role="button" data-toggle="popover" data-trigger="focus" title="سه شنبه"
+                                data-content="۸ الی ۱۲ - کلاس ۲۰۱">اطلاعات</a>
+                        </td>
+                        <td>
+                            <i class="far fa-window-minimize grey-text fa-2x"></i>
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
@@ -195,7 +212,7 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" onclick="location.href = 'request.html'" class="btn btn-primary">بله</button>
+          <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="confirm();">بله</button>
         </div>
       </div>
     </div>
@@ -355,6 +372,27 @@
         $('[data-toggle="popover"]').popover()
         })
   </script>
+
+<script>
+    function confirm()
+    {
+      var element, name, arr;
+    
+
+    // show the alert
+    
+    element = document.getElementById("choice-alert");
+    name = "show";
+    arr = element.className.split(" ");
+    if (arr.indexOf(name) == -1) {
+    element.className += " " + name;
+    }
+
+    };
+    
+   
+
+</script>
 
 </body>
 </html>

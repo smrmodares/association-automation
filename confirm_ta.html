@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>درخواست‌ها</title>
+  <title>تایید دستیار</title>
 
   <!-- SAMAD icon -->
   <link rel="icon" href="img/logo.png" type="image/x-icon">
@@ -47,7 +47,7 @@
                 <a class="nav-link grey-text" href="teacher.html">میزکار</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link grey-text" href="confirm_ta.html">تایید دستیار</a>
+                <a class="nav-link grey-text" href="request.html">درخواست ها</a>
             </li>
             
             <li class="nav-item">
@@ -88,7 +88,7 @@
                 <div class="col-md-12">
     
                     <!-- Heading -->
-                    <h2 class="display-4 font-weight-bolder black-text pt-5 mb-2">درخواست ها</h2>
+                    <h2 class="display-4 font-weight-bolder black-text pt-5 mb-2">تایید ساعت کاری دستیاران</h2>
     
                     <!-- Divider -->
                     <hr class="primary-color">            
@@ -111,15 +111,21 @@
 
             <!--Grid column-->
             <div class="col-md-12 mb-4 ">
-
+                 <!-- alert initialy hided -->
+              <div id="choice-alert" class="alert alert-success alert-dismissible fade hide" role="alert">
+                ثبت شد.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
                 <form method="post" name="form1" >
             <table style="width: 1100px" class="table table-striped table-responsive-md btn-table">
                 <thead>
                     <tr>
                       <th>#</th>
                       <th>نام دانشجو</th>
-                      <th> درس درخواستی</th>
-                      <th>اطلاعات دانشجو</th>
+                      <th> درس </th>
+                      <th>ساعت تدریس</th>
                       <th>تایید</th>
                     </tr>
                 </thead>
@@ -134,8 +140,7 @@
                              ساختمان داده
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۳۲"
-                                data-content="نمره درس: ۲۰">اطلاعات</a>
+                            <input type="number" min="1" max="160" class="form-control" value="0"></input>
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
@@ -152,8 +157,10 @@
                              معادلات دیفرانسیل
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۴۳"
-                                data-content="نمره درس: ۱۹.۵">اطلاعات</a>
+                            
+                                    <input type="number" min="1" max="160" class="form-control" value="0"></input>
+                                 
+                            
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
@@ -170,8 +177,7 @@
                              مبانی برنامه سازی
                         </td>
                         <td>
-                            <a tabindex="0" class="btn btn-sm btn-outline-info waves-effect" role="button" data-toggle="popover" data-trigger="focus" title="۹۶۱۰۳۲۳۲"
-                                data-content="نمره درس: ۱۹">اطلاعات</a>
+                            <input type="number" min="1" max="160" class="form-control" value="0"></input>
                         </td>
                         <td class="d-flex justify-content-center">
                             <div class="custom-control custom-switch">
@@ -188,14 +194,14 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">آیا از انتخاب خود مطمئن هستید؟</h5>
+          <h5 class="modal-title" id="exampleModalLabel">آیا مطمئن هستید؟</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
         </div>
 
         <div class="modal-footer">
-          <button type="button" onclick="location.href = 'request.html'" class="btn btn-primary">بله</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="confirm();">بله</button>
         </div>
       </div>
     </div>
@@ -355,6 +361,29 @@
         $('[data-toggle="popover"]').popover()
         })
   </script>
+  <script>
+      function confirm()
+      {
+        var element, name, arr;
+      
+
+      // show the alert
+      
+      element = document.getElementById("choice-alert");
+      name = "show";
+      arr = element.className.split(" ");
+      if (arr.indexOf(name) == -1) {
+      element.className += " " + name;
+      }
+
+    //   location.href = 'confirm_ta.html';
+      };
+      
+     
+
+  </script>
+
+  
 
 </body>
 </html>
